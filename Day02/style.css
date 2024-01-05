@@ -1,0 +1,28 @@
+h1{
+    background-color: aqua;
+    text-align: center;
+    }
+    *{
+        text-align: center;
+    }
+    
+    
+    .reptile{
+        color:green
+    }
+        
+    
+    #tadpole{
+        color:brown
+    }
+    
+    
+    [href]:hover{
+        color:lawngreen
+    }
+    header:hover{
+        color: maroon
+    }
+    
+        
+    
