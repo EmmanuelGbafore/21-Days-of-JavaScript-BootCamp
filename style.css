@@ -1,0 +1,117 @@
+body{
+    font-family: 'Times New Roman', Times, serif;
+    margin:0;
+    padding:0;
+}
+header {
+    background-color:azure;
+    color:black;
+    padding: 5px;
+    text-align: center;
+    font-size: large;
+}
+nav{
+    background-color:beige;
+    color:blue;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    text-decoration: none;
+    padding:10px;
+    margin: 50px;
+}
+
+nav a:hover {
+    color: green;
+}
+
+.search-bar{
+    margin: 20px auto;
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 5px;
+    width:200px;
+    display: block;
+}
+
+.main-content{
+    display:flex;
+    text-align: center;
+    justify-content: space-between;
+    padding:20px;
+    background-color: bisque;
+    border-radius: 10px;
+    margin-bottom: 60px;
+}
+
+.dish-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+    grid-gap: 10px;
+    width: 66%;
+    margin: 0 auto;
+}
+
+.dish{
+    border-radius: 5px;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+
+.dish img {
+    width: 60%;
+    height: 60%;
+    object-fit:cover;
+}
+
+.dish p {
+    padding: 10px;
+    margin:0;
+}
+
+.order-button {
+    background-color:grey;
+    color: blue;
+    border:saddlebrown;
+    padding: 15px 15px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 20px;
+    position: relative;
+    right:50%;
+    left: 50%;
+    margin-bottom: 20px;
+}
+
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsive Design*/
+
+@media only screen and (max-width:1024px){
+ .dish-grid {
+    grid-template-columns:repeat(1,1fr);    /*Change to a single column for smaller screens*/
+    width:80%;                             /* Adjust width for smaller screens*/
+ }   
+}
+
+@media  only screen and (max-width:600px) {
+    .dish-grid{
+        width: 100%   /* Full width for the smallest screen size*/
+    }
+}
+
+
