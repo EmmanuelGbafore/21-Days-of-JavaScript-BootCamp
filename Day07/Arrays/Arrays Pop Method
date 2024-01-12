@@ -1,0 +1,5 @@
+// The pop method removes the last element at the end of the array
+let vowels = ['a','e','i','o','u','p'];
+console.log(vowels);      // Prints out the list before the removal  of the last element.
+vowels.pop();
+console.log(vowels);    // Will print the list of vowels with p  removed from the end
